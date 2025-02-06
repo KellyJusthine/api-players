@@ -17,9 +17,9 @@ services:
     ports:
       - "8080:8080"
     environment:
-      - SPRING_DATASOURCE_URL=jdbc:postgresql://postgres-db:5432/api_player
-      - SPRING_DATASOURCE_USERNAME=user123
-      - SPRING_DATASOURCE_PASSWORD=user123
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://ep-summer-hat-a4zj79yc-pooler.us-east-1.aws.neon.tech/neondb?sslmode=require
+      - SPRING_DATASOURCE_USERNAME=neondb_owner
+      - SPRING_DATASOURCE_PASSWORD=npg_XQtTOLg98qpP
     depends_on:
       - postgres-db
 
