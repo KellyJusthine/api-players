@@ -5,6 +5,8 @@ services:
     build: .
     ports:
       - "8080:8080"
+    env_file:
+      - .env
 
   frontend:
     image: nginx:alpine
@@ -12,4 +14,7 @@ services:
       - ./src/main/resources/static:/usr/share/nginx/html
     ports:
       - "80:80"
+
+
+
 
