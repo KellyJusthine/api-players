@@ -5,10 +5,6 @@ services:
     build: .
     ports:
       - "8080:8080"
-    environment:
-      - SPRING_DATASOURCE_URL=jdbc:postgresql://ep-summer-hat-a4zj79yc-pooler.us-east-1.aws.neon.tech/neondb?sslmode=require
-      - SPRING_DATASOURCE_USERNAME=neondb_owner
-      - SPRING_DATASOURCE_PASSWORD=npg_XQtTOLg98qpP
 
   frontend:
     image: nginx:alpine
@@ -17,5 +13,3 @@ services:
     ports:
       - "80:80"
 
-volumes:
-  postgres-data:
